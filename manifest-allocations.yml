@@ -9,5 +9,7 @@ applications:
     path: Applications/AllocationsServer/bin/Release/netcoreapp3.1/publish
     env:
       REGISTRATION_SERVER_ENDPOINT: https://registration-pal-DivyaShri.cfapps.io
+      GRANT_TYPE: client_credentials
     services:
       - tracker-allocations-database
+      - tracker-sso

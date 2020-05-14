@@ -9,5 +9,7 @@ applications:
     path: Applications/TimesheetsServer/bin/Release/netcoreapp3.1/publish
     env:
       REGISTRATION_SERVER_ENDPOINT: https://registration-pal-DivyaShri.cfapps.io
+      GRANT_TYPE: client_credentials
     services:
       - tracker-timesheets-database
+      - tracker-sso
