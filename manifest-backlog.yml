@@ -13,3 +13,4 @@ applications:
     services:
       - tracker-backlog-database
       - tracker-sso
+      - tracker-config-server

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Steeltoe.Extensions.Configuration.CloudFoundry;
 using Steeltoe.Extensions.Logging;
 using Steeltoe.Common.Hosting;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace BacklogServer
 {
@@ -16,7 +17,8 @@ namespace BacklogServer
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .AddCloudFoundry()
+                //.AddCloudFoundry()
+                .AddConfigServer()
                 .UseCloudHosting()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
